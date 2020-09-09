@@ -56,7 +56,7 @@ def parse_frequency_lists(data_dir):
     for freq_list_name in DICTIONARIES:
         if freq_list_name not in freq_lists:
             msg = 'Warning: %s appears in DICTIONARY settings but not in %s directory. Excluding.'
-            print msg % (freq_list, data_dir)
+            print msg % (freq_list_name, data_dir)
     return freq_lists
 
 def is_rare_and_short(token, rank):
